@@ -29,3 +29,15 @@ TODO
 *  Make sure it works on an Edison
 *  Try a digispark?
 
+Example output:
+<pre>
+2015/08/30 12:07:31 Starting up on interface[en0]...
+2015/08/30 12:07:31 Listening for Dash buttons...
+2015/08/30 12:08:13 Pressed the Glad button.
+2015/08/30 12:09:08 Pressed the Gatorade button.
+2015/08/30 12:10:19 Pressed the Gatorade button.
+2015/08/30 12:11:03 Pressed the Glad button.
+2015/08/30 12:11:08 Pressed the Gatorade button.
+2015/08/30 12:11:23 Pressed the Glad button.
+2015/08/30 12:11:26 Pressed the Gatorade button.
+</pre>
