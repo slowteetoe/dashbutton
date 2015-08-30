@@ -18,7 +18,7 @@ func main() {
 	flag.Parse()
 	devs, err := pcap.FindAllDevs()
 	if err != nil || len(devs) == 0 {
-		log.Printf("No devices found, you must run this as 'root' on OSX - try:\n sudo GOPATH=/Users/slowteetoe/go go run identify.go\n (error was: %s)\n", err)
+		log.Fatalf("No devices found, you must run this as 'root' on OSX - try:\n sudo GOPATH=/Users/slowteetoe/go go run identify.go\n (error was: %v)\n", err)
 	}
 	h, err := pcap.OpenLive(*interfaceName, 65536, true, pcap.BlockForever)
 	if err != nil || h == nil {
