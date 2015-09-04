@@ -17,6 +17,12 @@ First Time Setup
 
 4. Save this MAC address, it's how your Dash button will be identified.
 
+Compiling for the Edison
+---
+This was a bit of a pain, at least on a Mac.  See <a href="http://dequeue.blogspot.com/2015/09/compiling-go-app-that-uses-cgo-to-run.html" target="_blank">this blog post</a> for details, if you want.  Otherwise, you just need something like:
+
+  GOARCH=386 CGO_ENABLED=1 go build --ldflags '-extldflags "-static"' listen.go
+
 Usage
 ---
 0. Implement whatever you want the button presses to do (there are empty functions in listen.go that handle the button presses)
@@ -27,8 +33,8 @@ Usage
 TODO
 -----
 *  Allow setting up the MAC addresses dynamically?
-*  Hook up the gobot stuff (toggle LEDs to start)
-*  Make sure it works on an Edison
+*  <s>Hook up the gobot stuff (toggle LEDs to start)</s>
+*  <s>Make sure it works on an Edison</s>
 *  Try a digispark?
 
 Example output:
@@ -43,3 +49,10 @@ Example output:
 2015/08/30 12:11:23 Pressed the Glad button.
 2015/08/30 12:11:26 Pressed the Gatorade button.
 </pre>
+
+Video of the LED code in action
+---
+<video controls="controls">
+  <source type="video/mp4" src="led.mp4"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
