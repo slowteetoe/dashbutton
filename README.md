@@ -52,7 +52,7 @@ Example output:
 
 Video of the LED code in action
 ---
-<video controls="controls">
+<video controls>
   <source type="video/mp4" src="led.mp4"></source>
-  <p>Your browser does not support the video element.</p>
+  <p>Your browser does not support the video element. Download 'led.mp4' if you really want to see it in action.</p>
 </video>
